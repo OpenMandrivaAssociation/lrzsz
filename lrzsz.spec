@@ -11,6 +11,7 @@ Group: Communications
 URL: http://www.ohse.de/uwe/software/lrzsz.html
 Source: %{name}-%{version}.tar.bz2
 Patch1: %{name}-0.12.20-glibc21.patch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Lrzsz (consisting of lrz and lsz) is a cosmetically modified
