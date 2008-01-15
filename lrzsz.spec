@@ -1,6 +1,6 @@
 %define name lrzsz
 %define version 0.12.21
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: The lrz and lsz modem communications programs
 Name: %{name}
