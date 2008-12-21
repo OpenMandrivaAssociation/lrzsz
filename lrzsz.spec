@@ -1,11 +1,7 @@
-%define name lrzsz
-%define version 0.12.21
-%define release %mkrel 10
-
 Summary: The lrz and lsz modem communications programs
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name: lrzsz
+Version: 0.12.21
+Release: %mkrel 11
 License: GPL
 Group: Communications
 URL: http://www.ohse.de/uwe/software/lrzsz.html
