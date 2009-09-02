@@ -1,7 +1,7 @@
 Summary: The lrz and lsz modem communications programs
 Name: lrzsz
 Version: 0.12.21
-Release: %mkrel 11
+Release: %mkrel 12
 License: GPL
 Group: Communications
 URL: http://www.ohse.de/uwe/software/lrzsz.html
