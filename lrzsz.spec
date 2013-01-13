@@ -1,13 +1,13 @@
 Summary: The lrz and lsz modem communications programs
 Name: lrzsz
 Version: 0.12.21
-Release: %mkrel 17
+Release: 18
 License: GPL
 Group: Communications
 URL: http://www.ohse.de/uwe/software/lrzsz.html
 Source: %{name}-%{version}.tar.bz2
+Patch0: %name-0.12.21-automake-1.13.patch
 Patch1: %{name}-0.12.20-glibc21.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Lrzsz (consisting of lrz and lsz) is a cosmetically modified
@@ -21,7 +21,7 @@ lrzsz.
 
 %prep
 %setup -q
-%patch1 -p1 -b .glibc21
+%apply_patches
 
 # because of time skew between various generated files, autotools are
 # forced to run. In the process, gettext-devel is required but new
