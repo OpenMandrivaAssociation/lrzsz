@@ -29,7 +29,7 @@ lrzsz.
 find -type f -print0 | xargs -0 touch
 
 %build
-%configure2_5x \
+%configure \
 	--disable-pubdir \
 	--enable-syslog \
 	--program-transform-name=s/l//
