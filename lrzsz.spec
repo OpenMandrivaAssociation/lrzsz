@@ -8,6 +8,7 @@ Url:		http://www.ohse.de/uwe/software/lrzsz.html
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		%{name}-0.12.21-automake-1.13.patch
 Patch1:		%{name}-0.12.20-glibc21.patch
+Patch2:		lrzsz_fix_for_automake-1.12.patch
 
 %description
 Lrzsz (consisting of lrz and lsz) is a cosmetically modified
@@ -29,6 +30,7 @@ lrzsz.
 find -type f -print0 | xargs -0 touch
 
 %build
+
 %configure \
 	--disable-pubdir \
 	--enable-syslog \

@@ -1,0 +1,35 @@
+diff --git a/configure.in b/configure.in
+index 1f1703c..3251ab3 100644
+--- a/configure.in
++++ b/configure.in
+@@ -103,7 +103,6 @@ AC_PROG_RANLIB
+ AC_ISC_POSIX
+ AC_AIX
+ AC_MINIX
+-AM_C_PROTOTYPES
+ AC_C_CONST
+ AC_C_INLINE
+ 
+diff --git a/lib/Makefile.am b/lib/Makefile.am
+index 04b392c..1b723a9 100644
+--- a/lib/Makefile.am
++++ b/lib/Makefile.am
+@@ -1,6 +1,5 @@
+ noinst_LIBRARIES=libzmodem.a
+ CFLAGS=@CFLAGS@
+-AUTOMAKE_OPTIONS=ansi2knr
+ 
+ EXTRA_DIST = alloca.c ansi2knr.1 ansi2knr.c \
+ 	getopt.c getopt1.c mkdir.c mktime.c \
+diff --git a/src/Makefile.am b/src/Makefile.am
+index dd0a56c..76c2e17 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -8,7 +8,6 @@ CFLAGS=@CFLAGS@
+ DISTCLEAN_FILES=lrzszbug
+ 
+ LDADD = ../lib/libzmodem.a @INTLLIBS@
+-AUTOMAKE_OPTIONS=ansi2knr
+ EXTRA_DIST = ansi2knr.1 ansi2knr.c lrzszbug.in
+ INCLUDES = -I.. -I$(srcdir) -I$(top_srcdir)/src -I../intl -I$(top_srcdir)/lib
+ #DEFS = -DLOCALEDIR=\"$(localedir)\" -DOS=\"@host_os@\" -DCPU=\"@host_cpu@\"
