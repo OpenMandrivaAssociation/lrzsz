@@ -22,7 +22,7 @@ lrzsz.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 # because of time skew between various generated files, autotools are
 # forced to run. In the process, gettext-devel is required but new
