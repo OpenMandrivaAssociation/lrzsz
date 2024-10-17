@@ -4,7 +4,7 @@ Version:	0.12.21
 Release:	29
 License:	GPLv2
 Group:		Communications
-Url:		http://www.ohse.de/uwe/software/lrzsz.html
+Url:		https://www.ohse.de/uwe/software/lrzsz.html
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		%{name}-0.12.21-automake-1.13.patch
 Patch1:		%{name}-0.12.20-glibc21.patch
