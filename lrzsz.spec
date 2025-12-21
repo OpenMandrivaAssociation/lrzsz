@@ -10,6 +10,11 @@ Patch0:		%{name}-0.12.21-automake-1.13.patch
 Patch1:		%{name}-0.12.20-glibc21.patch
 Patch2:		lrzsz_fix_for_automake-1.12.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Lrzsz (consisting of lrz and lsz) is a cosmetically modified
 zmodem/ymodem/xmodem package built from the public-domain version of the
